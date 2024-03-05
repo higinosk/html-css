@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <hr>
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em vários dispositos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" sizes="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <hr>
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/La Docerola - Quincas Moreira.mp3" type="audio/mpeg">
+    </audio>
+    <hr>
+    <h2>Inserindo vídeo</h2>
+    <h3>Hospedados localmente</h3>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" height="315" controls loop >
+        <source src="midia" type="video/mp4">
+        <source src="midia/Meu-Videowebm.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h3>Inserindo vídeos do Youtube</h3>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=6ppPfp_2wF7iOSsB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h3>Inserindo vídeos do Vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ff9933&portrait=0" width="500" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
